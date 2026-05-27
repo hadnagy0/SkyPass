@@ -1,0 +1,56 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="auth-logo">✈️</div>
+      <h2>Alătură-te SkyPass!</h2>
+      <p>Creează un cont gratuit și începe să cauți bilete de avion</p>
+    </div>
+
+    <form nz-form [formGroup]="registerForm" (ngSubmit)="submitForm()" class="register-form" nzLayout="vertical">
+      <div class="name-row">
+        <nz-form-item class="name-item">
+          <nz-form-label nzRequired>Nume</nz-form-label>
+          <nz-form-control nzErrorTip="Te rugăm să introduci numele!">
+            <input type="text" nz-input formControlName="nume" placeholder="Nume" />
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item class="name-item">
+          <nz-form-label nzRequired>Prenume</nz-form-label>
+          <nz-form-control nzErrorTip="Te rugăm să introduci prenumele!">
+            <input type="text" nz-input formControlName="prenume" placeholder="Prenume" />
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+
+      <nz-form-item>
+        <nz-form-label nzRequired>Adresă Email</nz-form-label>
+        <nz-form-control nzErrorTip="Introdu o adresă de email validă (ex: eve.holt@reqres.in)">
+          <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label nzRequired>Parolă</nz-form-label>
+        <nz-form-control [nzErrorTip]="getPasswordErrorTip()">
+          <input type="password" nz-input formControlName="password" placeholder="Min. 6 caractere, A, a, 1, @" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label nzRequired>Confirmare Parolă</nz-form-label>
+        <nz-form-control [nzErrorTip]="registerForm.errors?.['passwordMismatch'] ? 'Parolele nu coincid!' : 'Te rugăm să confirmi parola!'">
+          <input type="password" nz-input formControlName="confirmPassword" placeholder="Reintroduceți parola" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <button nz-button nzType="primary" nzBlock [nzLoading]="isLoading" class="btn-submit">
+        Înregistrare Cont
+      </button>
+
+      <div class="auth-footer">
+        Ai deja un cont creat? <a routerLink="/login">Autentifică-te aici</a>
+      </div>
+    </form>
+  </div>
+</div>

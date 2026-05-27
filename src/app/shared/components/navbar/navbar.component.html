@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo" routerLink="/">
+      <span class="logo-plane">✈️</span>
+      <span class="logo-text">SkyPass</span>
+    </div>
+
+    <ul class="nav-links">
+      @if (authService.isLoggedIn()) {
+        <li>
+          <a routerLink="/feed" routerLinkActive="active">Zboruri</a>
+        </li>
+        <li>
+          <a routerLink="/my-bookings" routerLinkActive="active">Jurnal & Bilete</a>
+        </li>
+        @if (cartService.activeFlight()) {
+          <li>
+            <a [routerLink]="['/checkout', cartService.activeFlight()?.id]" routerLinkActive="active" class="cart-link">
+              Coș Rezervare
+              @if (cartService.cartTickets().length > 0) {
+                <span class="badge">{{ cartService.cartTickets().length }}</span>
+              }
+            </a>
+          </li>
+        }
+        <li class="user-menu">
+          <span class="user-email">{{ authService.currentUser()?.email }}</span>
+          <button (click)="logout()" class="btn-logout">Ieșire</button>
+        </li>
+      } @else {
+        <li>
+          <a routerLink="/login" routerLinkActive="active">Login</a>
+        </li>
+        <li>
+          <a routerLink="/register" routerLinkActive="active" class="btn-register">Register</a>
+        </li>
+      }
+    </ul>
+  </div>
+</nav>

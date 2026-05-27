@@ -1,0 +1,39 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="auth-logo">✈️</div>
+      <h2>Bine ai revenit!</h2>
+      <p>Conectează-te pentru a gestiona zborurile și rezervările tale</p>
+    </div>
+
+    <form nz-form [formGroup]="loginForm" (ngSubmit)="submitForm()" class="login-form" nzLayout="vertical">
+      <nz-form-item>
+        <nz-form-label nzRequired>Adresă Email</nz-form-label>
+        <nz-form-control nzErrorTip="Te rugăm să introduci un email valid! (ex: eve.holt@reqres.in)">
+          <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label nzRequired>Parolă</nz-form-label>
+        <nz-form-control nzErrorTip="Te rugăm să introduci parola!">
+          <input type="password" nz-input formControlName="password" placeholder="••••••••" />
+        </nz-form-control>
+      </nz-form-item>
+
+      <div class="form-actions">
+        <label nz-checkbox formControlName="rememberMe">
+          <span class="remember-label">Ține-mă minte</span>
+        </label>
+      </div>
+
+      <button nz-button nzType="primary" nzBlock [nzLoading]="isLoading" class="btn-submit">
+        Conectare
+      </button>
+
+      <div class="auth-footer">
+        Nu ai cont încă? <a routerLink="/register">Creează un cont nou</a>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+{
+  "flightsCatalog": [
+    {
+      "id": "1",
+      "flightNumber": "RO 301",
+      "airline": "Tarom",
+      "departureAirport": "OTP (București)",
+      "arrivalAirport": "LHR (Londra)",
+      "departureTime": "2026-06-15T08:30:00Z",
+      "arrivalTime": "2026-06-15T10:45:00Z",
+      "duration": 255,
+      "basePrice": 120,
+      "isDirect": true
+    },
+    {
+      "id": "2",
+      "flightNumber": "LH 1420",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP (București)",
+      "arrivalAirport": "FRA (Frankfurt)",
+      "departureTime": "2026-06-16T13:45:00Z",
+      "arrivalTime": "2026-06-16T16:15:00Z",
+      "duration": 150,
+      "basePrice": 180,
+      "isDirect": true
+    },
+    {
+      "id": "3",
+      "flightNumber": "W6 3001",
+      "airline": "Wizz Air",
+      "departureAirport": "OTP (București)",
+      "arrivalAirport": "LTN (Londra)",
+      "departureTime": "2026-06-18T06:00:00Z",
+      "arrivalTime": "2026-06-18T08:15:00Z",
+      "duration": 255,
+      "basePrice": 45,
+      "isDirect": true
+    },
+    {
+      "id": "4",
+      "flightNumber": "AZ 432",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP (București)",
+      "arrivalAirport": "FCO (Roma)",
+      "departureTime": "2026-06-20T11:20:00Z",
+      "arrivalTime": "2026-06-20T13:30:00Z",
+      "duration": 130,
+      "basePrice": 95,
+      "isDirect": true
+    },
+    {
+      "id": "5",
+      "flightNumber": "AF 1081",
+      "airline": "Air France",
+      "departureAirport": "OTP (București)",
+      "arrivalAirport": "CDG (Paris)",
+      "departureTime": "2026-06-22T15:10:00Z",
+      "arrivalTime": "2026-06-22T18:25:00Z",
+      "duration": 195,
+      "basePrice": 210,
+      "isDirect": false
+    }
+  ],
+  "bookings": [],
+  "flightLogs": [
+    {
+      "id": "1",
+      "userId": 1,
+      "flightNumber": "RO 302",
+      "airline": "Tarom",
+      "departureAirport": "LHR (Londra)",
+      "arrivalAirport": "OTP (București)",
+      "date": "2026-05-10",
+      "status": "Efectuat",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "userId": 1,
+      "flightNumber": "FR 2102",
+      "airline": "Ryanair",
+      "departureAirport": "FCO (Roma)",
+      "arrivalAirport": "OTP (București)",
+      "date": "2026-04-12",
+      "status": "Efectuat",
+      "rating": 4
+    }
+  ]
+}
