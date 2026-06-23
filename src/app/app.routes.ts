@@ -33,6 +33,16 @@ export const routes: Routes = [
     canActivate: [authGuard]
   },
   {
+    path: 'contact',
+    loadComponent: () => import('./features/contact/contact.component').then(m => m.ContactComponent),
+    canActivate: [authGuard]
+  },
+  {
+    path: 'airlines',
+    loadComponent: () => import('./features/airlines/airlines.component').then(m => m.AirlinesComponent),
+    canActivate: [authGuard]
+  },
+  {
     path: '**',
     redirectTo: 'feed'
   }

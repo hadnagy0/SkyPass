@@ -24,6 +24,10 @@ export class FlightService {
     return this.http.post<Booking>(`${this.API_URL}/bookings`, booking);
   }
 
+  updateBooking(id: string, booking: Booking): Observable<Booking> {
+    return this.http.put<Booking>(`${this.API_URL}/bookings/${id}`, booking);
+  }
+
   getBookings(): Observable<Booking[]> {
     return this.http.get<Booking[]>(`${this.API_URL}/bookings`);
   }

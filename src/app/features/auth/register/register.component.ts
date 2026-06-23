@@ -7,6 +7,10 @@ import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 // Validator local pentru confirmarea parolei
 const passwordMatchValidator = (control: AbstractControl): ValidationErrors | null => {
@@ -24,11 +28,14 @@ const passwordMatchValidator = (control: AbstractControl): ValidationErrors | nu
   selector: 'app-register',
   standalone: true,
   imports: [
+    CommonModule,
     ReactiveFormsModule,
-    RouterLink,
+    RouterModule,
     NzFormModule,
     NzInputModule,
-    NzButtonModule
+    NzButtonModule,
+    NzCheckboxModule,
+    NzIconModule
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
@@ -48,6 +55,8 @@ export class RegisterComponent {
   }, { validators: passwordMatchValidator });
 
   isLoading = false;
+  passwordVisible = false;
+  confirmPasswordVisible = false;
 
   submitForm(): void {
     if (this.registerForm.valid) {

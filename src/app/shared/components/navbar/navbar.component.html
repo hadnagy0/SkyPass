@@ -1,8 +1,10 @@
 <nav class="navbar">
   <div class="nav-container">
     <div class="nav-logo" routerLink="/">
-      <span class="logo-plane">✈️</span>
-      <span class="logo-text">SkyPass</span>
+      <img src="/assets/logo.png" alt="SkyPass" class="logo-icon">
+      <div class="logo-text-container" [class.scrolled]="isScrolled">
+        <span class="logo-text"><span class="fw-300">Sky</span><span class="fw-800">PASS</span></span>
+      </div>
     </div>
 
     <ul class="nav-links">
@@ -11,7 +13,13 @@
           <a routerLink="/feed" routerLinkActive="active">Zboruri</a>
         </li>
         <li>
-          <a routerLink="/my-bookings" routerLinkActive="active">Jurnal & Bilete</a>
+          <a routerLink="/airlines" routerLinkActive="active">Companii Aeriene</a>
+        </li>
+        <li>
+          <a routerLink="/my-bookings" routerLinkActive="active">Istoric & Bilete</a>
+        </li>
+        <li>
+          <a routerLink="/contact" routerLinkActive="active">Contact</a>
         </li>
         @if (cartService.activeFlight()) {
           <li>
@@ -24,6 +32,7 @@
           </li>
         }
         <li class="user-menu">
+          <nz-avatar [nzText]="authService.currentUser()?.email?.charAt(0)?.toUpperCase() || 'U'" style="background-color: rgba(0, 242, 254, 0.2); color: #00F2FE; margin-right: 10px; font-weight: bold;"></nz-avatar>
           <span class="user-email">{{ authService.currentUser()?.email }}</span>
           <button (click)="logout()" class="btn-logout">Ieșire</button>
         </li>

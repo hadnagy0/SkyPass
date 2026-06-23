@@ -1,8 +1,11 @@
 <div class="auth-container">
   <div class="auth-card">
     <div class="auth-header">
-      <div class="auth-logo">✈️</div>
+      <div class="auth-logo"></div>
       <h2>Alătură-te SkyPass!</h2>
+      <div class="auth-logo-container" style="text-align: center; margin: 15px 0;">
+        <img src="/assets/logo.png" alt="SkyPass Logo" style="height: 60px;" />
+      </div>
       <p>Creează un cont gratuit și începe să cauți bilete de avion</p>
     </div>
 
@@ -11,14 +14,18 @@
         <nz-form-item class="name-item">
           <nz-form-label nzRequired>Nume</nz-form-label>
           <nz-form-control nzErrorTip="Te rugăm să introduci numele!">
-            <input type="text" nz-input formControlName="nume" placeholder="Nume" />
+            <nz-input-group [nzPrefix]="prefixUser">
+              <input type="text" nz-input formControlName="nume" placeholder="Nume" />
+            </nz-input-group>
           </nz-form-control>
         </nz-form-item>
 
         <nz-form-item class="name-item">
           <nz-form-label nzRequired>Prenume</nz-form-label>
           <nz-form-control nzErrorTip="Te rugăm să introduci prenumele!">
-            <input type="text" nz-input formControlName="prenume" placeholder="Prenume" />
+            <nz-input-group [nzPrefix]="prefixUser">
+              <input type="text" nz-input formControlName="prenume" placeholder="Prenume" />
+            </nz-input-group>
           </nz-form-control>
         </nz-form-item>
       </div>
@@ -26,23 +33,39 @@
       <nz-form-item>
         <nz-form-label nzRequired>Adresă Email</nz-form-label>
         <nz-form-control nzErrorTip="Introdu o adresă de email validă (ex: eve.holt@reqres.in)">
-          <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+          <nz-input-group [nzPrefix]="prefixMail">
+            <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+          </nz-input-group>
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item>
         <nz-form-label nzRequired>Parolă</nz-form-label>
         <nz-form-control [nzErrorTip]="getPasswordErrorTip()">
-          <input type="password" nz-input formControlName="password" placeholder="Min. 6 caractere, A, a, 1, @" />
+          <nz-input-group [nzPrefix]="prefixLock" [nzSuffix]="suffixTemplate">
+            <input [type]="passwordVisible ? 'text' : 'password'" nz-input formControlName="password" placeholder="Min. 6 caractere, A, a, 1, @" />
+          </nz-input-group>
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item>
         <nz-form-label nzRequired>Confirmare Parolă</nz-form-label>
         <nz-form-control [nzErrorTip]="registerForm.errors?.['passwordMismatch'] ? 'Parolele nu coincid!' : 'Te rugăm să confirmi parola!'">
-          <input type="password" nz-input formControlName="confirmPassword" placeholder="Reintroduceți parola" />
+          <nz-input-group [nzPrefix]="prefixLock" [nzSuffix]="suffixTemplateConfirm">
+            <input [type]="confirmPasswordVisible ? 'text' : 'password'" nz-input formControlName="confirmPassword" placeholder="Reintroduceți parola" />
+          </nz-input-group>
         </nz-form-control>
       </nz-form-item>
+
+      <ng-template #prefixUser><span nz-icon nzType="user"></span></ng-template>
+      <ng-template #prefixMail><span nz-icon nzType="mail"></span></ng-template>
+      <ng-template #prefixLock><span nz-icon nzType="lock"></span></ng-template>
+      <ng-template #suffixTemplate>
+        <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible" style="cursor: pointer; color: #fff;"></span>
+      </ng-template>
+      <ng-template #suffixTemplateConfirm>
+        <span nz-icon [nzType]="confirmPasswordVisible ? 'eye-invisible' : 'eye'" (click)="confirmPasswordVisible = !confirmPasswordVisible" style="cursor: pointer; color: #fff;"></span>
+      </ng-template>
 
       <button nz-button nzType="primary" nzBlock [nzLoading]="isLoading" class="btn-submit">
         Înregistrare Cont

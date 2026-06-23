@@ -1,8 +1,11 @@
 <div class="auth-container">
   <div class="auth-card">
     <div class="auth-header">
-      <div class="auth-logo">✈️</div>
+      <div class="auth-logo"></div>
       <h2>Bine ai revenit!</h2>
+      <div class="auth-logo-container" style="text-align: center; margin: 15px 0;">
+        <img src="/assets/logo.png" alt="SkyPass Logo" style="height: 60px;" />
+      </div>
       <p>Conectează-te pentru a gestiona zborurile și rezervările tale</p>
     </div>
 
@@ -10,16 +13,26 @@
       <nz-form-item>
         <nz-form-label nzRequired>Adresă Email</nz-form-label>
         <nz-form-control nzErrorTip="Te rugăm să introduci un email valid! (ex: eve.holt@reqres.in)">
-          <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+          <nz-input-group [nzPrefix]="prefixMail">
+            <input type="email" nz-input formControlName="email" placeholder="ex: eve.holt@reqres.in" />
+          </nz-input-group>
         </nz-form-control>
       </nz-form-item>
 
       <nz-form-item>
         <nz-form-label nzRequired>Parolă</nz-form-label>
         <nz-form-control nzErrorTip="Te rugăm să introduci parola!">
-          <input type="password" nz-input formControlName="password" placeholder="••••••••" />
+          <nz-input-group [nzPrefix]="prefixLock" [nzSuffix]="suffixTemplate">
+            <input [type]="passwordVisible ? 'text' : 'password'" nz-input formControlName="password" placeholder="••••••••" />
+          </nz-input-group>
         </nz-form-control>
       </nz-form-item>
+
+      <ng-template #prefixMail><span nz-icon nzType="mail"></span></ng-template>
+      <ng-template #prefixLock><span nz-icon nzType="lock"></span></ng-template>
+      <ng-template #suffixTemplate>
+        <span nz-icon [nzType]="passwordVisible ? 'eye-invisible' : 'eye'" (click)="passwordVisible = !passwordVisible" style="cursor: pointer; color: #fff;"></span>
+      </ng-template>
 
       <div class="form-actions">
         <label nz-checkbox formControlName="rememberMe">

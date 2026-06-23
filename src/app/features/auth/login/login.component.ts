@@ -8,6 +8,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzMessageService } from 'ng-zorro-antd/message';
 
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -17,7 +19,8 @@ import { NzMessageService } from 'ng-zorro-antd/message';
     NzFormModule,
     NzInputModule,
     NzButtonModule,
-    NzCheckboxModule
+    NzCheckboxModule,
+    NzIconModule
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
@@ -35,6 +38,7 @@ export class LoginComponent {
   });
 
   isLoading = false;
+  passwordVisible = false;
 
   submitForm(): void {
     if (this.loginForm.valid) {
@@ -45,7 +49,7 @@ export class LoginComponent {
         next: () => {
           setTimeout(() => {
             this.isLoading = false;
-            this.message.success('Autentificare reușită! Bine ai venit pe SkyPass ✈️');
+            this.message.success('Autentificare reușită! Bine ai venit pe SkyPass.');
             this.router.navigate(['/feed']);
           });
         },

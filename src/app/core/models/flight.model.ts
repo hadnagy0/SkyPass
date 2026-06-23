@@ -34,6 +34,8 @@ export interface Booking {
   bookingDate: string;
   totalPrice: number;
   passengers: PassengerTicket[];
+  rating?: number;
+  status?: string;
 }
 
 export interface FlightLog {

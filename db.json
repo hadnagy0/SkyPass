@@ -2,66 +2,912 @@
   "flightsCatalog": [
     {
       "id": "1",
-      "flightNumber": "RO 301",
-      "airline": "Tarom",
-      "departureAirport": "OTP (București)",
-      "arrivalAirport": "LHR (Londra)",
-      "departureTime": "2026-06-15T08:30:00Z",
-      "arrivalTime": "2026-06-15T10:45:00Z",
-      "duration": 255,
-      "basePrice": 120,
+      "flightNumber": "LU4856",
+      "airline": "Lufthansa",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-08-18T03:27:00.000Z",
+      "arrivalTime": "2026-08-18T06:27:00.000Z",
+      "duration": 180,
+      "basePrice": 80,
       "isDirect": true
     },
     {
       "id": "2",
-      "flightNumber": "LH 1420",
-      "airline": "Lufthansa",
-      "departureAirport": "OTP (București)",
-      "arrivalAirport": "FRA (Frankfurt)",
-      "departureTime": "2026-06-16T13:45:00Z",
-      "arrivalTime": "2026-06-16T16:15:00Z",
-      "duration": 150,
-      "basePrice": 180,
+      "flightNumber": "RY6891",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-07-15T03:39:00.000Z",
+      "arrivalTime": "2026-07-15T07:39:00.000Z",
+      "duration": 240,
+      "basePrice": 60,
       "isDirect": true
     },
     {
       "id": "3",
-      "flightNumber": "W6 3001",
-      "airline": "Wizz Air",
-      "departureAirport": "OTP (București)",
-      "arrivalAirport": "LTN (Londra)",
-      "departureTime": "2026-06-18T06:00:00Z",
-      "arrivalTime": "2026-06-18T08:15:00Z",
-      "duration": 255,
-      "basePrice": 45,
+      "flightNumber": "IT8569",
+      "airline": "ITA Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "ATH",
+      "departureTime": "2026-07-09T15:49:00.000Z",
+      "arrivalTime": "2026-07-09T17:49:00.000Z",
+      "duration": 120,
+      "basePrice": 111,
       "isDirect": true
     },
     {
       "id": "4",
-      "flightNumber": "AZ 432",
-      "airline": "ITA Airways",
-      "departureAirport": "OTP (București)",
-      "arrivalAirport": "FCO (Roma)",
-      "departureTime": "2026-06-20T11:20:00Z",
-      "arrivalTime": "2026-06-20T13:30:00Z",
-      "duration": 130,
-      "basePrice": 95,
+      "flightNumber": "WI5975",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "BCN",
+      "departureTime": "2026-08-16T21:58:00.000Z",
+      "arrivalTime": "2026-08-17T00:58:00.000Z",
+      "duration": 180,
+      "basePrice": 65,
       "isDirect": true
     },
     {
       "id": "5",
-      "flightNumber": "AF 1081",
+      "flightNumber": "BR9981",
+      "airline": "British Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "ZRH",
+      "departureTime": "2026-06-27T21:25:00.000Z",
+      "arrivalTime": "2026-06-28T00:25:00.000Z",
+      "duration": 180,
+      "basePrice": 67,
+      "isDirect": true
+    },
+    {
+      "id": "6",
+      "flightNumber": "WI1604",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "AMS",
+      "departureTime": "2026-07-29T07:22:00.000Z",
+      "arrivalTime": "2026-07-29T11:22:00.000Z",
+      "duration": 240,
+      "basePrice": 279,
+      "isDirect": true
+    },
+    {
+      "id": "7",
+      "flightNumber": "RY9803",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-08-04T01:35:00.000Z",
+      "arrivalTime": "2026-08-04T03:35:00.000Z",
+      "duration": 120,
+      "basePrice": 241,
+      "isDirect": true
+    },
+    {
+      "id": "8",
+      "flightNumber": "RY3225",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "BCN",
+      "departureTime": "2026-07-31T18:31:00.000Z",
+      "arrivalTime": "2026-07-31T20:31:00.000Z",
+      "duration": 120,
+      "basePrice": 148,
+      "isDirect": false
+    },
+    {
+      "id": "9",
+      "flightNumber": "LU8124",
+      "airline": "Lufthansa",
+      "departureAirport": "GHV",
+      "arrivalAirport": "BCN",
+      "departureTime": "2026-06-24T00:25:00.000Z",
+      "arrivalTime": "2026-06-24T02:25:00.000Z",
+      "duration": 120,
+      "basePrice": 124,
+      "isDirect": true
+    },
+    {
+      "id": "10",
+      "flightNumber": "AI4635",
       "airline": "Air France",
-      "departureAirport": "OTP (București)",
-      "arrivalAirport": "CDG (Paris)",
-      "departureTime": "2026-06-22T15:10:00Z",
-      "arrivalTime": "2026-06-22T18:25:00Z",
-      "duration": 195,
-      "basePrice": 210,
+      "departureAirport": "GHV",
+      "arrivalAirport": "IST",
+      "departureTime": "2026-07-30T02:18:00.000Z",
+      "arrivalTime": "2026-07-30T04:18:00.000Z",
+      "duration": 120,
+      "basePrice": 165,
+      "isDirect": true
+    },
+    {
+      "id": "11",
+      "flightNumber": "TA2585",
+      "airline": "Tarom",
+      "departureAirport": "GHV",
+      "arrivalAirport": "MUC",
+      "departureTime": "2026-07-19T05:38:00.000Z",
+      "arrivalTime": "2026-07-19T08:38:00.000Z",
+      "duration": 180,
+      "basePrice": 273,
+      "isDirect": true
+    },
+    {
+      "id": "12",
+      "flightNumber": "WI8787",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-08-06T02:33:00.000Z",
+      "arrivalTime": "2026-08-06T06:33:00.000Z",
+      "duration": 240,
+      "basePrice": 312,
+      "isDirect": true
+    },
+    {
+      "id": "13",
+      "flightNumber": "WI9083",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "IST",
+      "departureTime": "2026-06-27T09:34:00.000Z",
+      "arrivalTime": "2026-06-27T12:34:00.000Z",
+      "duration": 180,
+      "basePrice": 185,
+      "isDirect": true
+    },
+    {
+      "id": "14",
+      "flightNumber": "IT7266",
+      "airline": "ITA Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "CDG",
+      "departureTime": "2026-08-03T06:57:00.000Z",
+      "arrivalTime": "2026-08-03T09:57:00.000Z",
+      "duration": 180,
+      "basePrice": 275,
+      "isDirect": true
+    },
+    {
+      "id": "15",
+      "flightNumber": "LU6747",
+      "airline": "Lufthansa",
+      "departureAirport": "GHV",
+      "arrivalAirport": "ATH",
+      "departureTime": "2026-07-11T08:54:00.000Z",
+      "arrivalTime": "2026-07-11T10:54:00.000Z",
+      "duration": 120,
+      "basePrice": 126,
+      "isDirect": true
+    },
+    {
+      "id": "16",
+      "flightNumber": "IT1614",
+      "airline": "ITA Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FRA",
+      "departureTime": "2026-06-28T08:04:00.000Z",
+      "arrivalTime": "2026-06-28T10:04:00.000Z",
+      "duration": 120,
+      "basePrice": 160,
+      "isDirect": true
+    },
+    {
+      "id": "17",
+      "flightNumber": "RY3610",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-08-17T12:39:00.000Z",
+      "arrivalTime": "2026-08-17T16:39:00.000Z",
+      "duration": 240,
+      "basePrice": 49,
+      "isDirect": true
+    },
+    {
+      "id": "18",
+      "flightNumber": "LU3899",
+      "airline": "Lufthansa",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-08-10T06:02:00.000Z",
+      "arrivalTime": "2026-08-10T08:02:00.000Z",
+      "duration": 120,
+      "basePrice": 161,
+      "isDirect": true
+    },
+    {
+      "id": "19",
+      "flightNumber": "WI2129",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "IST",
+      "departureTime": "2026-06-24T17:00:00.000Z",
+      "arrivalTime": "2026-06-24T20:00:00.000Z",
+      "duration": 180,
+      "basePrice": 83,
+      "isDirect": true
+    },
+    {
+      "id": "20",
+      "flightNumber": "KL9372",
+      "airline": "KLM",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-08-05T02:18:00.000Z",
+      "arrivalTime": "2026-08-05T06:18:00.000Z",
+      "duration": 240,
+      "basePrice": 87,
+      "isDirect": true
+    },
+    {
+      "id": "21",
+      "flightNumber": "RY6201",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-07-14T14:36:00.000Z",
+      "arrivalTime": "2026-07-14T18:36:00.000Z",
+      "duration": 240,
+      "basePrice": 111,
+      "isDirect": true
+    },
+    {
+      "id": "22",
+      "flightNumber": "AI4709",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "departureTime": "2026-07-14T23:14:00.000Z",
+      "arrivalTime": "2026-07-15T02:14:00.000Z",
+      "duration": 180,
+      "basePrice": 306,
+      "isDirect": false
+    },
+    {
+      "id": "23",
+      "flightNumber": "BR7078",
+      "airline": "British Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-07-27T10:44:00.000Z",
+      "arrivalTime": "2026-07-27T12:44:00.000Z",
+      "duration": 120,
+      "basePrice": 75,
+      "isDirect": true
+    },
+    {
+      "id": "24",
+      "flightNumber": "TA7086",
+      "airline": "Tarom",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "departureTime": "2026-07-08T22:27:00.000Z",
+      "arrivalTime": "2026-07-09T00:27:00.000Z",
+      "duration": 120,
+      "basePrice": 229,
+      "isDirect": true
+    },
+    {
+      "id": "25",
+      "flightNumber": "KL4763",
+      "airline": "KLM",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-08-08T05:59:00.000Z",
+      "arrivalTime": "2026-08-08T08:59:00.000Z",
+      "duration": 180,
+      "basePrice": 332,
+      "isDirect": true
+    },
+    {
+      "id": "26",
+      "flightNumber": "RY6427",
+      "airline": "Ryanair",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-07-15T14:35:00.000Z",
+      "arrivalTime": "2026-07-15T18:35:00.000Z",
+      "duration": 240,
+      "basePrice": 284,
+      "isDirect": true
+    },
+    {
+      "id": "27",
+      "flightNumber": "WI7284",
+      "airline": "Wizz Air",
+      "departureAirport": "GHV",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-06-30T21:22:00.000Z",
+      "arrivalTime": "2026-07-01T01:22:00.000Z",
+      "duration": 240,
+      "basePrice": 163,
+      "isDirect": false
+    },
+    {
+      "id": "28",
+      "flightNumber": "KL7043",
+      "airline": "KLM",
+      "departureAirport": "GHV",
+      "arrivalAirport": "ATH",
+      "departureTime": "2026-06-30T19:43:00.000Z",
+      "arrivalTime": "2026-06-30T22:43:00.000Z",
+      "duration": 180,
+      "basePrice": 301,
+      "isDirect": true
+    },
+    {
+      "id": "29",
+      "flightNumber": "LU8491",
+      "airline": "Lufthansa",
+      "departureAirport": "GHV",
+      "arrivalAirport": "LHR",
+      "departureTime": "2026-08-15T00:48:00.000Z",
+      "arrivalTime": "2026-08-15T03:48:00.000Z",
+      "duration": 180,
+      "basePrice": 63,
+      "isDirect": true
+    },
+    {
+      "id": "30",
+      "flightNumber": "BR9438",
+      "airline": "British Airways",
+      "departureAirport": "GHV",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-07-02T21:36:00.000Z",
+      "arrivalTime": "2026-07-03T00:36:00.000Z",
+      "duration": 180,
+      "basePrice": 215,
+      "isDirect": false
+    },
+    {
+      "id": "31",
+      "flightNumber": "RY5018",
+      "airline": "Ryanair",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LHR",
+      "departureTime": "2026-08-06T23:03:00.000Z",
+      "arrivalTime": "2026-08-07T03:03:00.000Z",
+      "duration": 240,
+      "basePrice": 82,
+      "isDirect": false
+    },
+    {
+      "id": "32",
+      "flightNumber": "IT8698",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "VIE",
+      "departureTime": "2026-07-29T16:56:00.000Z",
+      "arrivalTime": "2026-07-29T18:56:00.000Z",
+      "duration": 120,
+      "basePrice": 298,
+      "isDirect": false
+    },
+    {
+      "id": "33",
+      "flightNumber": "IT5967",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "MAD",
+      "departureTime": "2026-08-16T13:42:00.000Z",
+      "arrivalTime": "2026-08-16T16:42:00.000Z",
+      "duration": 180,
+      "basePrice": 160,
+      "isDirect": true
+    },
+    {
+      "id": "34",
+      "flightNumber": "LU5988",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP",
+      "arrivalAirport": "FRA",
+      "departureTime": "2026-07-05T03:51:00.000Z",
+      "arrivalTime": "2026-07-05T07:51:00.000Z",
+      "duration": 240,
+      "basePrice": 183,
+      "isDirect": true
+    },
+    {
+      "id": "35",
+      "flightNumber": "WI9204",
+      "airline": "Wizz Air",
+      "departureAirport": "OTP",
+      "arrivalAirport": "IST",
+      "departureTime": "2026-07-26T19:23:00.000Z",
+      "arrivalTime": "2026-07-26T23:23:00.000Z",
+      "duration": 240,
+      "basePrice": 85,
+      "isDirect": true
+    },
+    {
+      "id": "36",
+      "flightNumber": "AI1516",
+      "airline": "Air France",
+      "departureAirport": "OTP",
+      "arrivalAirport": "CDG",
+      "departureTime": "2026-07-22T07:19:00.000Z",
+      "arrivalTime": "2026-07-22T10:19:00.000Z",
+      "duration": 180,
+      "basePrice": 320,
+      "isDirect": true
+    },
+    {
+      "id": "37",
+      "flightNumber": "BR1675",
+      "airline": "British Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "FCO",
+      "departureTime": "2026-07-28T01:48:00.000Z",
+      "arrivalTime": "2026-07-28T05:48:00.000Z",
+      "duration": 240,
+      "basePrice": 141,
+      "isDirect": false
+    },
+    {
+      "id": "38",
+      "flightNumber": "WI5220",
+      "airline": "Wizz Air",
+      "departureAirport": "OTP",
+      "arrivalAirport": "ZRH",
+      "departureTime": "2026-07-28T15:30:00.000Z",
+      "arrivalTime": "2026-07-28T18:30:00.000Z",
+      "duration": 180,
+      "basePrice": 232,
+      "isDirect": true
+    },
+    {
+      "id": "39",
+      "flightNumber": "WI6251",
+      "airline": "Wizz Air",
+      "departureAirport": "OTP",
+      "arrivalAirport": "CDG",
+      "departureTime": "2026-08-08T06:35:00.000Z",
+      "arrivalTime": "2026-08-08T09:35:00.000Z",
+      "duration": 180,
+      "basePrice": 135,
+      "isDirect": false
+    },
+    {
+      "id": "40",
+      "flightNumber": "TA7686",
+      "airline": "Tarom",
+      "departureAirport": "OTP",
+      "arrivalAirport": "ATH",
+      "departureTime": "2026-06-27T07:18:00.000Z",
+      "arrivalTime": "2026-06-27T10:18:00.000Z",
+      "duration": 180,
+      "basePrice": 62,
+      "isDirect": true
+    },
+    {
+      "id": "41",
+      "flightNumber": "IT2304",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LIS",
+      "departureTime": "2026-08-21T03:33:00.000Z",
+      "arrivalTime": "2026-08-21T06:33:00.000Z",
+      "duration": 180,
+      "basePrice": 83,
+      "isDirect": false
+    },
+    {
+      "id": "42",
+      "flightNumber": "LU6926",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LIS",
+      "departureTime": "2026-07-23T05:21:00.000Z",
+      "arrivalTime": "2026-07-23T08:21:00.000Z",
+      "duration": 180,
+      "basePrice": 202,
+      "isDirect": true
+    },
+    {
+      "id": "43",
+      "flightNumber": "BR9997",
+      "airline": "British Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "AMS",
+      "departureTime": "2026-07-22T09:24:00.000Z",
+      "arrivalTime": "2026-07-22T12:24:00.000Z",
+      "duration": 180,
+      "basePrice": 240,
+      "isDirect": true
+    },
+    {
+      "id": "44",
+      "flightNumber": "IT2938",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LHR",
+      "departureTime": "2026-07-30T07:01:00.000Z",
+      "arrivalTime": "2026-07-30T09:01:00.000Z",
+      "duration": 120,
+      "basePrice": 144,
+      "isDirect": false
+    },
+    {
+      "id": "45",
+      "flightNumber": "AI2496",
+      "airline": "Air France",
+      "departureAirport": "OTP",
+      "arrivalAirport": "MUC",
+      "departureTime": "2026-07-24T02:44:00.000Z",
+      "arrivalTime": "2026-07-24T04:44:00.000Z",
+      "duration": 120,
+      "basePrice": 308,
+      "isDirect": false
+    },
+    {
+      "id": "46",
+      "flightNumber": "BR9229",
+      "airline": "British Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LHR",
+      "departureTime": "2026-07-24T15:39:00.000Z",
+      "arrivalTime": "2026-07-24T19:39:00.000Z",
+      "duration": 240,
+      "basePrice": 278,
+      "isDirect": true
+    },
+    {
+      "id": "47",
+      "flightNumber": "RY8586",
+      "airline": "Ryanair",
+      "departureAirport": "OTP",
+      "arrivalAirport": "CPH",
+      "departureTime": "2026-08-02T12:58:00.000Z",
+      "arrivalTime": "2026-08-02T16:58:00.000Z",
+      "duration": 240,
+      "basePrice": 192,
+      "isDirect": false
+    },
+    {
+      "id": "48",
+      "flightNumber": "IT2615",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LIS",
+      "departureTime": "2026-07-18T10:16:00.000Z",
+      "arrivalTime": "2026-07-18T13:16:00.000Z",
+      "duration": 180,
+      "basePrice": 305,
+      "isDirect": false
+    },
+    {
+      "id": "49",
+      "flightNumber": "WI8966",
+      "airline": "Wizz Air",
+      "departureAirport": "OTP",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-07-16T21:49:00.000Z",
+      "arrivalTime": "2026-07-17T01:49:00.000Z",
+      "duration": 240,
+      "basePrice": 185,
+      "isDirect": true
+    },
+    {
+      "id": "50",
+      "flightNumber": "TA2205",
+      "airline": "Tarom",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LIS",
+      "departureTime": "2026-07-07T19:29:00.000Z",
+      "arrivalTime": "2026-07-07T23:29:00.000Z",
+      "duration": 240,
+      "basePrice": 308,
+      "isDirect": false
+    },
+    {
+      "id": "51",
+      "flightNumber": "LU2792",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP",
+      "arrivalAirport": "DUB",
+      "departureTime": "2026-07-20T15:14:00.000Z",
+      "arrivalTime": "2026-07-20T18:14:00.000Z",
+      "duration": 180,
+      "basePrice": 228,
+      "isDirect": true
+    },
+    {
+      "id": "52",
+      "flightNumber": "KL5880",
+      "airline": "KLM",
+      "departureAirport": "OTP",
+      "arrivalAirport": "FCO",
+      "departureTime": "2026-07-26T21:55:00.000Z",
+      "arrivalTime": "2026-07-27T01:55:00.000Z",
+      "duration": 240,
+      "basePrice": 104,
+      "isDirect": true
+    },
+    {
+      "id": "53",
+      "flightNumber": "LU5547",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP",
+      "arrivalAirport": "AMS",
+      "departureTime": "2026-08-04T13:04:00.000Z",
+      "arrivalTime": "2026-08-04T17:04:00.000Z",
+      "duration": 240,
+      "basePrice": 76,
+      "isDirect": false
+    },
+    {
+      "id": "54",
+      "flightNumber": "BR4285",
+      "airline": "British Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "FRA",
+      "departureTime": "2026-07-03T07:49:00.000Z",
+      "arrivalTime": "2026-07-03T09:49:00.000Z",
+      "duration": 120,
+      "basePrice": 52,
+      "isDirect": false
+    },
+    {
+      "id": "55",
+      "flightNumber": "TA7729",
+      "airline": "Tarom",
+      "departureAirport": "OTP",
+      "arrivalAirport": "AMS",
+      "departureTime": "2026-06-26T05:38:00.000Z",
+      "arrivalTime": "2026-06-26T09:38:00.000Z",
+      "duration": 240,
+      "basePrice": 285,
+      "isDirect": false
+    },
+    {
+      "id": "56",
+      "flightNumber": "LU9635",
+      "airline": "Lufthansa",
+      "departureAirport": "OTP",
+      "arrivalAirport": "AMS",
+      "departureTime": "2026-06-29T20:04:00.000Z",
+      "arrivalTime": "2026-06-29T23:04:00.000Z",
+      "duration": 180,
+      "basePrice": 269,
+      "isDirect": true
+    },
+    {
+      "id": "57",
+      "flightNumber": "RY2725",
+      "airline": "Ryanair",
+      "departureAirport": "OTP",
+      "arrivalAirport": "LHR",
+      "departureTime": "2026-07-12T05:21:00.000Z",
+      "arrivalTime": "2026-07-12T07:21:00.000Z",
+      "duration": 120,
+      "basePrice": 331,
+      "isDirect": true
+    },
+    {
+      "id": "58",
+      "flightNumber": "TA1220",
+      "airline": "Tarom",
+      "departureAirport": "OTP",
+      "arrivalAirport": "BCN",
+      "departureTime": "2026-07-28T08:01:00.000Z",
+      "arrivalTime": "2026-07-28T10:01:00.000Z",
+      "duration": 120,
+      "basePrice": 126,
+      "isDirect": false
+    },
+    {
+      "id": "59",
+      "flightNumber": "IT2047",
+      "airline": "ITA Airways",
+      "departureAirport": "OTP",
+      "arrivalAirport": "FCO",
+      "departureTime": "2026-07-21T08:46:00.000Z",
+      "arrivalTime": "2026-07-21T10:46:00.000Z",
+      "duration": 120,
+      "basePrice": 44,
+      "isDirect": false
+    },
+    {
+      "id": "60",
+      "flightNumber": "RY9823",
+      "airline": "Ryanair",
+      "departureAirport": "OTP",
+      "arrivalAirport": "ZRH",
+      "departureTime": "2026-07-19T09:55:00.000Z",
+      "arrivalTime": "2026-07-19T11:55:00.000Z",
+      "duration": 120,
+      "basePrice": 337,
       "isDirect": false
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "userId": "eve.holt@reqres.in",
+      "flightId": "2",
+      "flightDetails": {
+        "flightNumber": "LH 1420",
+        "airline": "Lufthansa",
+        "departureAirport": "OTP (București)",
+        "arrivalAirport": "FRA (Frankfurt)",
+        "departureTime": "2026-06-16T13:45:00Z"
+      },
+      "bookingDate": "2026-06-23T13:22:36.120Z",
+      "totalPrice": 570,
+      "passengers": [
+        {
+          "name": "Alexandra Grecu",
+          "passport": "AB123456",
+          "cabinClass": "Business",
+          "baggage": "23kg",
+          "price": 390,
+          "seat": "20E"
+        },
+        {
+          "name": "Timea Hadnagy",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "None",
+          "price": 180,
+          "seat": "16A"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "userId": "hadnagy_05@yahoo.com",
+      "flightId": "3",
+      "flightDetails": {
+        "flightNumber": "W6 3001",
+        "airline": "Wizz Air",
+        "departureAirport": "OTP (București)",
+        "arrivalAirport": "LTN (Londra)",
+        "departureTime": "2026-06-18T06:00:00Z"
+      },
+      "bookingDate": "2026-06-23T13:33:06.551Z",
+      "totalPrice": 255,
+      "passengers": [
+        {
+          "name": "Timea Hadnagy",
+          "passport": "AB654321",
+          "cabinClass": "Business",
+          "baggage": "23kg",
+          "price": 255,
+          "seat": "4B"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "1",
+      "flightDetails": {
+        "flightNumber": "RO 301",
+        "airline": "Tarom",
+        "departureAirport": "OTP (București)",
+        "arrivalAirport": "LHR (Londra)",
+        "departureTime": "2026-06-15T08:30:00Z"
+      },
+      "bookingDate": "2026-06-23T13:51:22.660Z",
+      "totalPrice": 120,
+      "passengers": [
+        {
+          "name": "Ale",
+          "passport": "AB123456",
+          "cabinClass": "Economy",
+          "baggage": "None",
+          "price": 120,
+          "seat": "3B"
+        }
+      ],
+      "id": 3,
+      "rating": 5
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "22",
+      "flightDetails": {
+        "flightNumber": "AI4709",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "FCO",
+        "departureTime": "2026-07-14T23:14:00.000Z"
+      },
+      "bookingDate": "2026-06-23T14:42:48.922Z",
+      "totalPrice": 486,
+      "passengers": [
+        {
+          "name": "Ale",
+          "passport": "AB123456",
+          "cabinClass": "Business",
+          "baggage": "10kg",
+          "price": 486,
+          "seat": "14F"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "userId": "hadnagy_05@yahoo.com",
+      "flightId": "22",
+      "flightDetails": {
+        "flightNumber": "AI4709",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "FCO",
+        "departureTime": "2026-07-14T23:14:00.000Z"
+      },
+      "bookingDate": "2026-06-23T14:52:03.731Z",
+      "totalPrice": 306,
+      "passengers": [
+        {
+          "name": "Timea Hadnagy",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "None",
+          "price": 306,
+          "seat": "6A"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "22",
+      "flightDetails": {
+        "flightNumber": "AI4709",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "FCO",
+        "departureTime": "2026-07-14T23:14:00.000Z"
+      },
+      "bookingDate": "2026-06-23T15:39:33.295Z",
+      "totalPrice": 306,
+      "passengers": [
+        {
+          "name": "Timea Hadnagy",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "None",
+          "price": 306,
+          "seat": "8A"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "10",
+      "flightDetails": {
+        "flightNumber": "AI4635",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "IST",
+        "departureTime": "2026-07-30T02:18:00.000Z"
+      },
+      "bookingDate": "2026-06-23T15:47:48.252Z",
+      "totalPrice": 420,
+      "passengers": [
+        {
+          "name": "Ale",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "10kg",
+          "price": 195,
+          "seat": "8E"
+        },
+        {
+          "name": "Timea Hadnagy",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "23kg",
+          "price": 225,
+          "seat": "8D"
+        }
+      ],
+      "id": 7
+    }
+  ],
   "flightLogs": [
     {
       "id": "1",
@@ -84,6 +930,50 @@
       "date": "2026-04-12",
       "status": "Efectuat",
       "rating": 4
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightNumber": "AI4709",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "date": "2026-07-14T23:14:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "pLyzkib"
+    },
+    {
+      "userId": "hadnagy_05@yahoo.com",
+      "flightNumber": "AI4709",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "date": "2026-07-14T23:14:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "JbvQmyA"
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightNumber": "AI4709",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "date": "2026-07-14T23:14:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "mxnVdQe"
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightNumber": "AI4635",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "IST",
+      "date": "2026-07-30T02:18:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "ikeIv59"
     }
   ]
 }
