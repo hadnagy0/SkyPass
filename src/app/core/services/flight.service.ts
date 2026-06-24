@@ -32,6 +32,10 @@ export class FlightService {
     return this.http.get<Booking[]>(`${this.API_URL}/bookings`);
   }
 
+  deleteBooking(id: string): Observable<void> {
+    return this.http.delete<void>(`${this.API_URL}/bookings/${id}`);
+  }
+
   // 3. Jurnalul manual personal de calatorii (Tabelul CRUD B)
   getFlightLogs(): Observable<FlightLog[]> {
     return this.http.get<FlightLog[]>(`${this.API_URL}/flightLogs`);

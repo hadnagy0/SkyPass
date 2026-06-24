@@ -99,6 +99,9 @@ import { AIRLINE_LOGOS } from '../../core/utils/logos';
                 <input type="text" nz-input placeholder="Caută zbor..." [formControl]="searchControl" />
               </nz-input-group>
               <ng-template #searchIcon><span nz-icon nzType="search"></span></ng-template>
+              <button nz-button nzType="primary" (click)="openAddModal()">
+                <span nz-icon nzType="plus"></span> Adaugă Zbor
+              </button>
             </div>
 
             <nz-table #logTable [nzData]="filteredLogs()">
@@ -132,6 +135,9 @@ import { AIRLINE_LOGOS } from '../../core/utils/logos';
                     <button nz-button nzType="text" nzSize="small" (click)="editLog(log)">
                       <span nz-icon nzType="star"></span> Evaluează
                     </button>
+                    <button nz-button nzDanger nzType="text" nzSize="small" nz-popconfirm nzPopconfirmTitle="Sigur vrei să ștergi?" (nzOnConfirm)="deleteLog(log.id!)">
+                      <span nz-icon nzType="delete"></span> Șterge
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -148,6 +154,26 @@ import { AIRLINE_LOGOS } from '../../core/utils/logos';
               <nz-form-label [nzSm]="8">Acordă un Rating</nz-form-label>
               <nz-form-control [nzSm]="16">
                 <nz-rate formControlName="rating"></nz-rate>
+              </nz-form-control>
+            </nz-form-item>
+          </form>
+        </ng-container>
+      </nz-modal>
+
+      <!-- Modal Adaugare -->
+      <nz-modal [(nzVisible)]="isAddModalVisible" nzTitle="Adaugă Zbor Nou" (nzOnCancel)="handleAddCancel()" (nzOnOk)="handleAddSave()" [nzOkDisabled]="!addLogForm.valid">
+        <ng-container *nzModalContent>
+          <form nz-form [formGroup]="addLogForm">
+            <nz-form-item>
+              <nz-form-label [nzSm]="8">Număr Zbor</nz-form-label>
+              <nz-form-control [nzSm]="16">
+                <input nz-input formControlName="flightNumber" placeholder="Ex: W6 3255" />
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-label [nzSm]="8">Companie</nz-form-label>
+              <nz-form-control [nzSm]="16">
+                <input nz-input formControlName="airline" placeholder="Ex: Tarom" />
               </nz-form-control>
             </nz-form-item>
           </form>
@@ -253,6 +279,12 @@ export class MyBookingsComponent implements OnInit {
     rating: [0]
   });
 
+  isAddModalVisible = false;
+  addLogForm: FormGroup = this.fb.group({
+    flightNumber: ['', Validators.required],
+    airline: ['', Validators.required]
+  });
+
   filteredLogs = computed(() => {
     const term = this.searchTerm().toLowerCase();
     return this.pastBookings()
@@ -327,6 +359,53 @@ export class MyBookingsComponent implements OnInit {
       this.msg.success('Rating actualizat cu succes!');
       this.loadData();
       this.isModalVisible = false;
+    });
+  }
+
+  deleteLog(id: string): void {
+    this.flightService.deleteBooking(id).subscribe(() => {
+      this.msg.success('Zbor șters cu succes!');
+      this.loadData();
+    });
+  }
+
+  openAddModal(): void {
+    this.addLogForm.reset();
+    this.isAddModalVisible = true;
+  }
+
+  handleAddCancel(): void {
+    this.isAddModalVisible = false;
+  }
+
+  handleAddSave(): void {
+    if (this.addLogForm.invalid) return;
+    const user = this.authService.currentUser();
+    
+    const newMockBooking: any = {
+      id: Math.random().toString(36).substr(2, 9),
+      userId: user?.email || 'guest',
+      flightDetails: {
+        flightNumber: this.addLogForm.value.flightNumber,
+        airline: this.addLogForm.value.airline,
+        departureAirport: 'OTP',
+        arrivalAirport: 'MANUAL',
+        departureTime: new Date().toISOString(),
+        arrivalTime: new Date().toISOString(),
+        price: 0,
+        currency: 'EUR'
+      },
+      passengers: [],
+      totalPrice: 0,
+      bookingDate: new Date().toISOString(),
+      status: 'Efectuat',
+      rating: 0
+    };
+
+    this.flightService.createBooking(newMockBooking).subscribe(() => {
+      this.msg.success('Zbor adăugat cu succes!');
+      this.loadData();
+      this.isAddModalVisible = false;
     });
   }
 

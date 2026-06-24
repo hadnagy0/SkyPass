@@ -906,6 +906,73 @@
         }
       ],
       "id": 7
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "22",
+      "flightDetails": {
+        "flightNumber": "AI4709",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "FCO",
+        "departureTime": "2026-07-14T23:14:00.000Z"
+      },
+      "bookingDate": "2026-06-24T15:48:33.908Z",
+      "totalPrice": 516,
+      "passengers": [
+        {
+          "name": "Ale",
+          "passport": "AB654321",
+          "cabinClass": "Business",
+          "baggage": "23kg",
+          "price": 516,
+          "seat": "12F"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightId": "10",
+      "flightDetails": {
+        "flightNumber": "AI4635",
+        "airline": "Air France",
+        "departureAirport": "GHV",
+        "arrivalAirport": "IST",
+        "departureTime": "2026-07-30T02:18:00.000Z"
+      },
+      "bookingDate": "2026-06-24T17:21:46.158Z",
+      "totalPrice": 165,
+      "passengers": [
+        {
+          "name": "Ale",
+          "passport": "AB654321",
+          "cabinClass": "Economy",
+          "baggage": "None",
+          "price": 165,
+          "seat": "4D"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "id": "7t3ctis1c",
+      "userId": "alegrecu@gmail.com",
+      "flightDetails": {
+        "flightNumber": "AI4635",
+        "airline": "Air France",
+        "departureAirport": "OTP",
+        "arrivalAirport": "MANUAL",
+        "departureTime": "2026-06-24T17:22:59.815Z",
+        "arrivalTime": "2026-06-24T17:22:59.815Z",
+        "price": 0,
+        "currency": "EUR"
+      },
+      "passengers": [],
+      "totalPrice": 0,
+      "bookingDate": "2026-06-24T17:22:59.815Z",
+      "status": "Efectuat",
+      "rating": 4
     }
   ],
   "flightLogs": [
@@ -974,6 +1041,28 @@
       "status": "Planificat",
       "rating": 0,
       "id": "ikeIv59"
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightNumber": "AI4709",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "FCO",
+      "date": "2026-07-14T23:14:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "CG4Ow50"
+    },
+    {
+      "userId": "alegrecu@gmail.com",
+      "flightNumber": "AI4635",
+      "airline": "Air France",
+      "departureAirport": "GHV",
+      "arrivalAirport": "IST",
+      "date": "2026-07-30T02:18:00.000Z",
+      "status": "Planificat",
+      "rating": 0,
+      "id": "AgKWh_n"
     }
   ]
 }

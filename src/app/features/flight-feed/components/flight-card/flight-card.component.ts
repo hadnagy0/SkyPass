@@ -286,14 +286,20 @@ export class FlightCardComponent {
       'CDG': 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=100&h=100&fit=crop', // Paris
       'LHR': 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=100&h=100&fit=crop', // London
       'FCO': 'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=100&h=100&fit=crop', // Rome
-      'BCN': 'https://images.unsplash.com/photo-1583422409516-1500d05a5fb1?w=100&h=100&fit=crop', // Barcelona
+      'BCN': 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=100&h=100&fit=crop', // Barcelona
       'MAD': 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=100&h=100&fit=crop', // Madrid
       'OTP': 'https://images.unsplash.com/photo-1584646098378-0874589d76b1?w=100&h=100&fit=crop', // Bucharest
       'AMS': 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?w=100&h=100&fit=crop', // Amsterdam
       'ATH': 'https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?w=100&h=100&fit=crop', // Athens
       'IST': 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=100&h=100&fit=crop', // Istanbul
-      'DUB': 'https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=100&h=100&fit=crop', // Dublin
-      'GHV': 'https://images.unsplash.com/photo-1582200254215-63b715fb823d?w=100&h=100&fit=crop' // Brasov
+      'DUB': 'https://images.unsplash.com/photo-1605969353711-234dea348ce1?w=100&h=100&fit=crop', // Dublin
+      'GHV': 'https://images.unsplash.com/photo-1558253347-fb1128610003?w=100&h=100&fit=crop', // Brasov
+      'MUC': 'https://images.unsplash.com/photo-1595867818082-083862f3d630?w=100&h=100&fit=crop', // Munich
+      'ZRH': 'https://images.unsplash.com/photo-1620563092215-0fbc6b55cfc5?w=100&h=100&fit=crop', // Zurich
+      'FRA': 'https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=100&h=100&fit=crop', // Frankfurt
+      'VIE': 'https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=100&h=100&fit=crop', // Vienna
+      'CPH': 'https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=100&h=100&fit=crop', // Copenhagen
+      'LIS': 'https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=100&h=100&fit=crop' // Lisbon
     };
     return urls[iata] || 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=100&h=100&fit=crop'; // Default airplane view
   }
